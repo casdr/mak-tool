@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 __author__ = "Cas de Reuver"
 __copyright__ = "Copyright (C) 2017 Cas de Reuver"
 __license__ = "GPLv3"
