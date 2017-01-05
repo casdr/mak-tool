@@ -70,8 +70,8 @@ def parse_xml(result):
 
 if __name__ == '__main__':
     args = sys.argv
-    if len(sys.argv) < 3:
-        print("python3 check_mak.py [key_id] [warning_limit]")
+    if len(sys.argv) < 4:
+        print("python3 check_mak.py [key_id] [warning_limit] [critical_limit]")
         sys.exit(3)
 
     xmldata = build_xml(sys.argv[1])
@@ -81,7 +81,7 @@ if __name__ == '__main__':
         if activations >= int(sys.argv[2]):
             print("OK - {0} activations left".format(activations))
             sys.exit(0)
-        elif activations < 1:
+        elif activations < int(sys.argv[3]):
             print("CRITICAL - {0} activations left".format(activations))
             sys.exit(2)
         elif activations < int(sys.argv[2]):
