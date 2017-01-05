@@ -1,5 +1,7 @@
-# Remaining MAK tool
-# By casdr / cas.reuver.co
+__author__ = "Cas de Reuver"
+__copyright__ = "Copyright (C) 2017 Cas de Reuver"
+__license__ = "GPLv3"
+__version__ = "1.0"
 
 from lxml import etree
 import hmac
