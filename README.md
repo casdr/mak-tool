@@ -4,7 +4,7 @@
 
 Microsoft has made the Volume Activation Management Tool to check license usage. For MAK (Multiple Activation Keys) you can view how many activations are remaining. Since we didn't want to start the tool every morning, I started debugging the application and made this thingy.
 
-## Installation
+## Dependencies
 
 This tool requires python3, lxml and requests to function.
 
